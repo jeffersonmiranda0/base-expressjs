@@ -11,9 +11,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.get('/', (req, res) => {
-    res.json('Hello World');
-});
 
 server.listen(port, () => {
     console.log('EXECUTOU', port);
